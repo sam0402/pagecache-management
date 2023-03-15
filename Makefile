@@ -3,7 +3,7 @@ MANDIR=/usr/man/manl/printenv.l
 BINDIR=/usr/local/bin
 LIBDIR=/usr/local/lib
 
-CFLAGS += -O2 -Wall -g -pg -D_FILE_OFFSET_BITS=64 # -g -fstack-protector-all
+CFLAGS += -O2 -Wall -g -pg -D_FILE_OFFSET_BITS=64 -Dloff_t=off_t # -g -fstack-protector-all
 
 all: pagecache-management.so sfr fadv pagecache-management-ignore-reads.so 
 
